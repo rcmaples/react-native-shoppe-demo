@@ -24,8 +24,8 @@ const MarketScreen = () => {
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         {isLoading
           ? <ActivityIndicator />
-          : data.map(p =>
-            <View key={p.id}>
+          : data.map((p, index) =>
+            <View key={index}>
               <ProductCard {...p} />
             </View>
           )}

@@ -15,8 +15,8 @@ const CartScreen: React.FC = () => {
     >
       <CartHeader />
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-        {items.map(item =>
-          <View key={item.id}>
+        {items.map((item, index) =>
+          <View key={index}>
             <ItemCard {...item} />
           </View>
         )}
