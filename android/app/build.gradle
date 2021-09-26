@@ -1,12 +1,5 @@
 apply plugin: "com.android.application"
 
-apply plugin: 'fullstory'
-fullstory {
-    org '<YOUR_ORG_ID>'
-    server 'https://staging.fullstory.com'
-    enabledVariants 'all'
-}
-
 import com.android.build.OutputFile
 
 /**
